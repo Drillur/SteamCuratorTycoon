@@ -1,0 +1,13 @@
+{
+	"Name": "Cloud",
+	"Class": "BotLimit",
+	"Hide When Locked": true,
+	"Tree": "grandpas_shed",
+	"Persist": 1,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Effect": 20,
+	"Price": "10e3 refactor",
+	"Effect Text": "Increase the Bot limit by 20",
+	"Toggleable": false
+}

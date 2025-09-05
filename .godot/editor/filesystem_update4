@@ -1,0 +1,8 @@
+res://steam_curator_tycoon/upgrade trees/2/grandpas_shed.tscn
+res://addons/log/log.gd
+res://steam_curator_tycoon/main.tscn
+res://steam_curator_tycoon/stages/curator1.tscn
+res://steam_curator_tycoon/upgrade trees/1/moms_basement.tscn
+res://steam_curator_tycoon/bot/bot.tscn
+res://steam_curator_tycoon/bot/bot_node.tscn
+res://steam_curator_tycoon/steam game/steam_game_node.tscn

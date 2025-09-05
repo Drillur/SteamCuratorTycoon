@@ -1,0 +1,12 @@
+{
+	"Name": "Refactor",
+	"Plural Name": "Refactors",
+	"Icon": "mana",
+	"Color": "#e01f59",
+	"Stage": "curator1",
+	"Currency Window Folder": "",
+	"Offline Eligible": true,
+	"Persist": 0,
+	"Starting Amount": 0,
+	"Reset Amount": 0
+}

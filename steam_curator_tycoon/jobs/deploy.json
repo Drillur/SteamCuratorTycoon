@@ -1,0 +1,11 @@
+{
+	"Name": "Deploy",
+	"Status Text": "Deploying Bots!",
+	"Sprite Frames Path": "",
+	"Output": "1 bot",
+	"Input": "24 buck",
+	"Base Duration": 24,
+	"Log Rates": false,
+	"Modulate Animation": false,
+	"Flip Animation Horizontally": false
+}

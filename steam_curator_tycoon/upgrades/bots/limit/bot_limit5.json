@@ -1,0 +1,13 @@
+{
+	"Name": "Cores",
+	"Class": "BotLimit",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 0,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Effect": 10,
+	"Price": "50000 buck",
+	"Effect Text": "Increase the Bot limit by 10",
+	"Toggleable": false
+}

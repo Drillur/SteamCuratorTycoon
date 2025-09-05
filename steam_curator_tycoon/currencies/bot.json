@@ -1,0 +1,12 @@
+{
+	"Name": "Bot",
+	"Plural Name": "Bots",
+	"Icon": "robot",
+	"Color": "random",
+	"Stage": "curator1",
+	"Currency Window Folder": "",
+	"Offline Eligible": false,
+	"Persist": 0,
+	"Starting Amount": 0,
+	"Reset Amount": 0
+}

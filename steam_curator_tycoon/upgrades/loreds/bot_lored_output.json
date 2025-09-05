@@ -1,0 +1,16 @@
+{
+	"Name": "Stop Slacking",
+	"Class": "Upgrade",
+	"Hide When Locked": true,
+	"Tree": "grandpas_shed",
+	"Persist": 1,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "50e3 refactor",
+	"Price Increase": 4,
+	"Purchase Limit": 2,
+	"Affected Object": "lored bot",
+	"Effect": "output x8",
+	"Effect Text": "Output [b]xEffectText[/b]NEWLINE[i]for [/i]{name lored bot}",
+	"Toggleable": false
+}

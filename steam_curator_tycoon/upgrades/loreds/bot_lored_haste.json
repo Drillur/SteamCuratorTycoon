@@ -1,0 +1,16 @@
+{
+	"Name": "Lock In",
+	"Class": "Upgrade",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 0,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "400 buck",
+	"Price Increase": 2,
+	"Purchase Limit": 48,
+	"Affected Object": "lored bot",
+	"Effect": "haste x48",
+	"Effect Text": "Haste [b]xEffectText[/b]NEWLINE[i]for [/i]{name lored bot}",
+	"Toggleable": false
+}

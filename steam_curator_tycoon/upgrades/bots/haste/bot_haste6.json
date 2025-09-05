@@ -1,0 +1,12 @@
+{
+	"Name": "GUACAMOLE!!!!!!!",
+	"Class": "BotHaste",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 0,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "400000 buck",
+	"Effect Text": "Subtracts 0.1875/0.375/0.75/1.125 seconds from BotNEWLINEIdle/Email/Review/Sell Durations",
+	"Toggleable": false
+}

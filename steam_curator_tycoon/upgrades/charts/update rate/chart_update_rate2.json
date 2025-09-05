@@ -1,0 +1,12 @@
+{
+	"Name": "cmon cmon!!",
+	"Class": "ChartUpdate",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 0,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "7500 buck",
+	"Effect Text": "Increases how often the games list refreshes",
+	"Toggleable": false
+}

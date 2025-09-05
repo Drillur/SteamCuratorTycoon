@@ -1,0 +1,13 @@
+{
+	"Name": "Second Page...?",
+	"Class": "ChartLimit",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 0,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Effect": 10,
+	"Price": "500000 buck",
+	"Effect Text": "Increase the Steam Games limit by 10",
+	"Toggleable": false
+}

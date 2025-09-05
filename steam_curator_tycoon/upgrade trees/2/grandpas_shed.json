@@ -1,0 +1,16 @@
+{
+	"Name": "Grandpa's Shed Upgrades",
+	"Icon": "icon",
+	"Color": "#e01f59",
+	"Stage": "curator1",
+	"Persist": 1,
+	"Prestige Name": "Elope",
+	"Prestige Noun": "Elope",
+	"Prestige Past Verb": "Eloped",
+	"Prestige Present Verb": "Eloping",
+	"Requires Prestige to Apply": true,
+	"Prestige Order": 1,
+	"Unlocked By Default": true,
+	"Upgrade Container Shortcut": "W",
+	"Path": "uid://dn4ng2wg7ufk4"
+}

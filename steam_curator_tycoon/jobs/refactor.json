@@ -1,0 +1,11 @@
+{
+	"Name": "Refactor",
+	"Status Text": "Refactoring Bots!",
+	"Sprite Frames Path": "",
+	"Output": "1 refactor",
+	"Input": "48 buck",
+	"Base Duration": 48,
+	"Log Rates": true,
+	"Modulate Animation": false,
+	"Flip Animation Horizontally": false
+}

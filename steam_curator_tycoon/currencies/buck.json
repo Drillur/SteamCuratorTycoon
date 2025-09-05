@@ -1,0 +1,12 @@
+{
+	"Name": "Buck",
+	"Plural Name": "Bux",
+	"Icon": "dollar",
+	"Color": "#00ff00",
+	"Stage": "curator1",
+	"Currency Window Folder": "",
+	"Offline Eligible": true,
+	"Persist": 0,
+	"Starting Amount": 0,
+	"Reset Amount": 70
+}

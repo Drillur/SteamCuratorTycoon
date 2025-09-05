@@ -1,0 +1,10 @@
+{
+	"Name": "Curator Stage",
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Unlocked By Default": true,
+	"Tier": 0,
+	"Prestige Order": 4,
+	"Keyboard Shortcut": "1",
+	"Path": "uid://2btnc1bb4qrj"
+}

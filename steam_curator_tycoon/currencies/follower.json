@@ -1,0 +1,12 @@
+{
+	"Name": "Follower",
+	"Plural Name": "Followers",
+	"Icon": "user",
+	"Color": "#ffbf00",
+	"Stage": "curator1",
+	"Currency Window Folder": "",
+	"Offline Eligible": true,
+	"Persist": 0,
+	"Starting Amount": 0,
+	"Reset Amount": 0
+}

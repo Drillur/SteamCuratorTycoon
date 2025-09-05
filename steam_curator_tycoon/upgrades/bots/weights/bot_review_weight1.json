@@ -1,0 +1,12 @@
+{
+	"Name": "Hip N Cool Training",
+	"Class": "BotWeight",
+	"Hide When Locked": true,
+	"Tree": "grandpas_shed",
+	"Persist": 1,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "250e3 refactor",
+	"Effect Text": "Adjusts the weights of emails inNEWLINEfavor of writing a Professional Email (1/4)",
+	"Toggleable": false
+}

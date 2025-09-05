@@ -1,0 +1,12 @@
+{
+	"Name": "Mom's Basement Upgrades",
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Stage": "curator1",
+	"Persist": 0,
+	"Requires Prestige to Apply": false,
+	"Prestige Order": 4,
+	"Upgrade Container Shortcut": "Q",
+	"Unlocked By Default": true,
+	"Path": "uid://bs4nckan46k4a"
+}

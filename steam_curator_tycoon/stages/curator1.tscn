@@ -1,0 +1,528 @@
+[gd_scene load_steps=6 format=3 uid="uid://2btnc1bb4qrj"]
+
+[ext_resource type="PackedScene" uid="uid://dsydrectberad" path="res://steam_curator_tycoon/steam game/steam_game_node.tscn" id="1_2v0og"]
+[ext_resource type="PackedScene" uid="uid://dixdmsxchn0s6" path="res://steam_curator_tycoon/bot/bot.tscn" id="1_03eq5"]
+[ext_resource type="PackedScene" uid="uid://dqdttcqq4pny6" path="res://steam_curator_tycoon/bot/bot_node.tscn" id="1_25wx2"]
+[ext_resource type="Script" uid="uid://dawkf5o5vv1o" path="res://steam_curator_tycoon/stages/curator_1.gd" id="1_coy3p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mf2bk"]
+
+[node name="curator1" type="MarginContainer"]
+offset_right = 1116.0
+offset_bottom = 4925.0
+script = ExtResource("1_coy3p")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="."]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 250
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 250
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 32
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="bot" type="Panel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_mf2bk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="RefactorLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+bbcode_enabled = true
+text = "1,300 Refactors"
+fit_content = true
+autowrap_mode = 0
+
+[node name="KeyGainMultiplierLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+bbcode_enabled = true
+text = "Keys Gained x1.03"
+fit_content = true
+autowrap_mode = 0
+
+[node name="FollowerGainMultiplierLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+bbcode_enabled = true
+text = "Follower Gain Multiplier: [b]x3"
+fit_content = true
+autowrap_mode = 0
+
+[node name="KeyValueMultiplierLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+bbcode_enabled = true
+text = "Key Value Multiplier: [b]x30"
+fit_content = true
+autowrap_mode = 0
+
+[node name="BotLog" type="TextEdit" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+editable = false
+scroll_fit_content_height = true
+scroll_fit_content_width = true
+
+[node name="Bots" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="BotCountLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+text = "3/10 Bots"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Bots" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 0
+mouse_filter = 0
+mouse_force_pass_scroll_events = false
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="BotNode0" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode1" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode2" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode3" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode4" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode5" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode6" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode7" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode8" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="BotNode9" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" instance=ExtResource("1_25wx2")]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="BotCountLabel2" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/VBoxContainer2"]
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "Bots will loop through every game, performing these tasks:"
+fit_content = true
+
+[node name="BotCountLabel4" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/VBoxContainer2"]
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "1. Email developers for keys!"
+fit_content = true
+
+[node name="BotCountLabel3" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/VBoxContainer2"]
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "2. Review games for Followers!"
+fit_content = true
+
+[node name="BotCountLabel5" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/VBoxContainer2"]
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "3. Sell keys for Bux!"
+fit_content = true
+
+[node name="SteamGames" type="VBoxContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 16
+
+[node name="RefreshLabel" type="RichTextLabel" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+text = "Games refresh daily"
+fit_content = true
+autowrap_mode = 0
+
+[node name="SteamGames" type="GridContainer" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+mouse_filter = 2
+theme_override_constants/h_separation = 8
+theme_override_constants/v_separation = 8
+columns = 2
+
+[node name="SteamGameNode0" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode1" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode2" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode3" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode4" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode5" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode6" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode7" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode8" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode9" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode10" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode11" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode12" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode13" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode14" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode15" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode16" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode17" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode18" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="SteamGameNode19" parent="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/SteamGames/SteamGames" instance=ExtResource("1_2v0og")]
+layout_mode = 2
+
+[node name="OverlayUIElements" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 24
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="OverlayUIElements"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+mouse_filter = 2
+
+[node name="Panel" type="Panel" parent="OverlayUIElements/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="OverlayUIElements/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="OverlayUIElements/MarginContainer/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="DayLabel" type="RichTextLabel" parent="OverlayUIElements/MarginContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Day 3"
+fit_content = true
+autowrap_mode = 0
+
+[node name="HourLabel" type="RichTextLabel" parent="OverlayUIElements/MarginContainer/MarginContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 4
+text = "21:00"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Bots" type="Node" parent="."]
+
+[node name="Bot0" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot1" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot2" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot3" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot4" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot5" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot6" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot7" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot8" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot9" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot10" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot11" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot12" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot13" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot14" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot15" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot16" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot17" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot18" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot19" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot20" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot21" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot22" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot23" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot24" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot25" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot26" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot27" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot28" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot29" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot30" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot31" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot32" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot33" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot34" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot35" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot36" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot37" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot38" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot39" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot40" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot41" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot42" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot43" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot44" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot45" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot46" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot47" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot48" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot49" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot50" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot51" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot52" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot53" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot54" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot55" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot56" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot57" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot58" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot59" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot60" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot61" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot62" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot63" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot64" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot65" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot66" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot67" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot68" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot69" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot70" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot71" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot72" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot73" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot74" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot75" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot76" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot77" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot78" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot79" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot80" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot81" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot82" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot83" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot84" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot85" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot86" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot87" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot88" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot89" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot90" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot91" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot92" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot93" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot94" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot95" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot96" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot97" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot98" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[node name="Bot99" parent="Bots" instance=ExtResource("1_03eq5")]
+
+[connection signal="gui_input" from="ScrollContainer/MarginContainer/VBoxContainer/HBoxContainer/Bots/Bots" to="." method="_on_bots_gui_input"]

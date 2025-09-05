@@ -1,0 +1,12 @@
+{
+	"Name": "This Doesn't Seem Physically Possible!",
+	"Class": "ClockUpgrade",
+	"Hide When Locked": true,
+	"Tree": "grandpas_shed",
+	"Persist": 1,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "50e3 refactor",
+	"Effect Text": "Hours elapse in 0.50 fewer seconds",
+	"Toggleable": false
+}

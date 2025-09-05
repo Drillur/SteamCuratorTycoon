@@ -1,0 +1,12 @@
+{
+	"Name": "perfection",
+	"Class": "BotHaste",
+	"Hide When Locked": true,
+	"Tree": "grandpas_shed",
+	"Persist": 1,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "100e3 refactor",
+	"Effect Text": "Subtracts 0.025/0.15/0.275 seconds from BotNEWLINEEmail/Review/Sell Durations",
+	"Toggleable": false
+}

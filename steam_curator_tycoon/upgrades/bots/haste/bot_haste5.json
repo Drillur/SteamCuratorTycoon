@@ -1,0 +1,12 @@
+{
+	"Name": "WHAT DA FLIP???",
+	"Class": "BotHaste",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 0,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Price": "100000 buck",
+	"Effect Text": "Subtracts 0.25/0.5/1/1.5 seconds from BotNEWLINEIdle/Email/Review/Sell Durations",
+	"Toggleable": false
+}

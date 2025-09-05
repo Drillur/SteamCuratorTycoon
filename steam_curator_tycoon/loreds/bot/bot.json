@@ -1,0 +1,17 @@
+{
+	"Unlocked By Default": true,
+	"Title": "Bot",
+	"Name": "Landon",
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Description": "Has extreme arthritis.",
+	"Favorite Thing": "Macros!",
+	"Class": "BotLORED",
+	"Stage": "curator1",
+	"Price": "50 buck",
+	"Price Increase": 3.0,
+	"Jobs": "refactor, deploy",
+	"Primary Jobs": "refactor, deploy",
+	"Primary Currencies": "refactor",
+	"Autobuyer Level": 10
+}

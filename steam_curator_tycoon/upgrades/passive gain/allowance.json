@@ -1,0 +1,14 @@
+{
+	"Name": "Allowance",
+	"Class": "PassiveGain",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 1,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Affected Object": "currency buck",
+	"Effect": "passive_gain +1",
+	"Effect Text": "Gain 1 {name currency buck} per second",
+	"Currency Reward": "70 buck",
+	"Toggleable": false
+}

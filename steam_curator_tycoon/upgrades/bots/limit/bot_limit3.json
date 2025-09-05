@@ -1,0 +1,13 @@
+{
+	"Name": "Threads!!",
+	"Class": "BotLimit",
+	"Hide When Locked": true,
+	"Tree": "moms_basement",
+	"Persist": 0,
+	"Icon": "icon",
+	"Color": "#ffbf00",
+	"Effect": 3,
+	"Price": "4500 buck",
+	"Effect Text": "Increase the Bot limit by 3",
+	"Toggleable": false
+}

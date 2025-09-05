@@ -1,0 +1,149 @@
+[gd_scene load_steps=3 format=3 uid="uid://dsydrectberad"]
+
+[ext_resource type="Script" uid="uid://dv6pq2h5hl38c" path="res://steam_curator_tycoon/steam game/steam_game_node.gd" id="1_5byi8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kbi1q"]
+draw_center = false
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="SteamGameNode" type="MarginContainer"]
+custom_minimum_size = Vector2(362, 0)
+offset_right = 540.0
+offset_bottom = 117.0
+mouse_filter = 2
+script = ExtResource("1_5byi8")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 2
+
+[node name="Highlight" type="Panel" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kbi1q")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="NameLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "Demons of the Eternal Dawn"
+fit_content = true
+autowrap_mode = 0
+
+[node name="PriceLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+unique_name_in_owner = true
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+mouse_filter = 2
+bbcode_enabled = true
+text = "$69.99"
+fit_content = true
+autowrap_mode = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 1
+
+[node name="EmailedCheckbox" type="CheckBox" parent="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+text = "Emailed"
+
+[node name="ReviewedCheckbox" type="CheckBox" parent="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+text = "Reviewed"
+
+[node name="KeysCheckbox" type="CheckBox" parent="MarginContainer/VBoxContainer/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+text = "300 Keys Left"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 8
+
+[node name="FollowerLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+unique_name_in_owner = true
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+bbcode_enabled = true
+text = "345,800 Followers"
+fit_content = true
+autowrap_mode = 0
+
+[node name="DaysUntilReleaseLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer3"]
+unique_name_in_owner = true
+modulate = Color(0.75, 0.75, 0.75, 1)
+layout_mode = 2
+size_flags_horizontal = 10
+bbcode_enabled = true
+text = "4 Days Until Release"
+fit_content = true
+autowrap_mode = 0
+
+[node name="DeclinedContainer" type="MarginContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="Panel2" type="Panel" parent="DeclinedContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="DeclinedContainer"]
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="DeclinedContainer/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -124.0
+offset_top = -12.0
+offset_right = 124.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "[b][font_size=16][center]Declined"
+fit_content = true
+autowrap_mode = 0
